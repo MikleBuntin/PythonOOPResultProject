@@ -18,4 +18,4 @@ def enrollment():
     service.MoneyService.enrollment()
 
 def consumption():
-    service.moneyService.consumption()
+    service.MoneyService.consumption()

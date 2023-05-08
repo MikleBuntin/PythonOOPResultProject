@@ -14,7 +14,7 @@ while command != "Q":
         "5 - Зачислить средства \n" +
         "6 - Снять средства \n" +
         "Q - выйти")
-
+    command = input("Введите команду")
     if command == "1":
         controller.Controller.viewAllUsers()
     elif command == "2":
@@ -25,7 +25,7 @@ while command != "Q":
         controller.Controller.getCheck();
     elif command == "5":
         controller.Controller.enrollment();
-    elif command == "3":
+    elif command == "6":
         controller.Controller.consumption();
 
-    command = input("Введите команду")
+

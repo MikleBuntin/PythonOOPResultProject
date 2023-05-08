@@ -8,4 +8,4 @@ class User:
         self.check = check
 
     def toString(self):
-        return "User{" + "ID=" + self.id + ", name=" + self.name + ", check=" + self.check + '}' + "\n"
+        return "User{" + "ID=" + str(self.id) + ", name=" + self.name + ", check=" + self.check + '}' + "\n"

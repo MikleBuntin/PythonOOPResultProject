@@ -27,6 +27,9 @@ def deleteUser(delID):
                  id = int(line[line.find('ID=') + 3: line.find(', ')])
                  if id != int(delID):
                      users.append(line)
+                 else:
+                     print("User " + line + "DELETED")
+
 
     open('UserList.csv', 'w').close()
     with open('UserList.csv', 'a') as userList:
@@ -39,7 +42,7 @@ def getCheck(getCheckID):
              if line != '':
                  id = int(line[line.find('ID=') + 3: line.find(', ')])
                  if id == int(getCheckID):
-                     print(line[line.find('check=') + 6: line.find('}')])
+                     print("Check: " + line[line.find('check=') + 6: line.find('}')])
 
 
 def enrollment(id, summ):
@@ -52,7 +55,7 @@ def enrollment(id, summ):
                     users.append(line)
                 else:
                     newCheck = int(line[line.find('check=') + 6: line.find('}')]) + int(summ)
-                    newLine = line[: line.find('check=') + 6] + str(newCheck) + '}'
+                    newLine = line[: line.find('check=') + 6] + str(newCheck) + '}' + '\n'
                     users.append(newLine)
 
 

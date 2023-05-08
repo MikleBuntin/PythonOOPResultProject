@@ -1,3 +1,6 @@
 User{ID=2, name=Julia, check=2500}
 User{ID=3, name=Irina, check=2600}
-User{ID=4, name=Mikle, check=3400}
+User{ID=4, name=Mikle, check=2750}
+User{ID=5, name=Serafima, check=5300}
+User{ID=6, name=Daria, check=5700}
+User{ID=7, name=Sandra, check=8600}

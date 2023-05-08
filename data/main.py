@@ -1,7 +1,5 @@
 import controller.Controller
 
-
-
 print("Добрый день!")
 command = 0
 

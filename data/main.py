@@ -1,33 +1,12 @@
-# This is a sample Python script.
+import controller.Controller
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
-# package org.example.data;
-#
-# import org.example.controller.Controller;
-#
-# import java.io.IOException;
-# import java.util.Scanner;
 
 
 print("Добрый день!")
 command = 0
 
 while command != "Q":
-    print("Доступные операции:"
+    print("Доступные операции:\n"
         "1 - Просмотреть всех пользователей; \n" +
         "2 - Добавить пользователя \n" +
         "3 - Удалить пользователя \n" +
@@ -37,16 +16,16 @@ while command != "Q":
         "Q - выйти")
 
     if command == "1":
-        userController.viewAllUsers()
+        controller.Controller.viewAllUsers()
     elif command == "2":
-        userController.addUser()
+        controller.Controller.addUser()
     elif command == "3":
-        Controller.deleteUser();
+        controller.Controller.deleteUser();
     elif command == "4":
-        Controller.getCheck();
+        controller.Controller.getCheck();
     elif command == "5":
-        Controller.enrollment();
+        controller.Controller.enrollment();
     elif command == "3":
-        Controller.consumption();
+        controller.Controller.consumption();
 
     command = input("Введите команду")
